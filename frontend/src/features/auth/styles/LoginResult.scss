@@ -1,0 +1,48 @@
+.login-result {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+    background: var(--auth-bg);
+}
+
+.login-result-card {
+    width: var(--auth-width);
+    padding: 42px 36px;
+
+    background: var(--auth-card-bg);
+
+    border: 1px solid var(--auth-border);
+    border-radius: var(--auth-radius);
+
+    box-shadow: var(--auth-shadow);
+
+    text-align: center;
+}
+
+.login-result-icon {
+    font-size: 64px;
+    margin-bottom: 22px;
+}
+
+.login-result-icon.success {
+    color: var(--auth-success);
+}
+
+.login-result-icon.error {
+    color: var(--auth-error);
+}
+
+.login-result-card h1 {
+    color: var(--auth-text);
+
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.login-result-card p {
+    color: var(--auth-text-secondary);
+
+    line-height: 1.7;
+    font-size: 15px;
+}

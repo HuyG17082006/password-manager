@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "geoip-lite": "^1.4.10",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.22.5",
+    "nodemailer": "^9.0.3",
+    "nodemon": "^3.1.14",
+    "redis": "^6.1.0",
+    "ua-parser-js": "^2.0.10",
+    "uuid": "^14.0.1"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "type": "module"
+}

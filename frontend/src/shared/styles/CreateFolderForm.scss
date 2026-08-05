@@ -1,0 +1,256 @@
+.create-folder {
+
+    position: fixed;
+
+    inset: 0;
+
+    align-self: center;
+    justify-self: center;
+
+    width: min(560px, calc(100% - 32px));
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-xl);
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow-lg);
+
+    display: flex;
+
+    flex-direction: column;
+
+    z-index: 1000;
+
+    /* ========================== */
+
+    .header {
+
+        padding: 24px 28px;
+
+        background: var(--surface-soft);
+
+        border-bottom: 1px solid var(--border);
+
+        .title {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 14px;
+
+            svg {
+
+                color: var(--primary);
+
+                font-size: 24px;
+
+            }
+
+            h2 {
+
+                margin: 0;
+
+                color: var(--text-primary);
+
+                font-size: var(--font-heading);
+
+                font-weight: var(--weight-bold);
+
+            }
+
+        }
+
+    }
+
+    /* ========================== */
+
+    .body {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 28px;
+
+        padding: 30px 28px;
+
+        .form-group {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 12px;
+
+            label {
+
+                color: var(--text-primary);
+
+                font-size: var(--font-small);
+
+                font-weight: var(--weight-semibold);
+
+            }
+
+            input {
+
+                width: 100%;
+
+                height: 58px;
+
+                padding: 0 18px;
+
+                border: 1px solid var(--border);
+
+                border-radius: var(--radius-md);
+
+                background: var(--surface);
+
+                color: var(--text-primary);
+
+                font-size: var(--font-body);
+
+                transition: .2s;
+
+                &::placeholder {
+
+                    color: var(--text-placeholder);
+
+                }
+
+                &:focus {
+
+                    outline: none;
+
+                    border-color: var(--primary);
+
+                    box-shadow: 0 0 0 3px rgba(var(--primary-rgb), .12);
+
+                }
+
+            }
+
+            .error {
+
+                color: var(--danger);
+
+                font-size: var(--font-tiny);
+
+            }
+
+        }
+
+        .pin {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 14px;
+
+            cursor: pointer;
+
+            input {
+
+                width: 18px;
+
+                height: 18px;
+
+                accent-color: var(--primary);
+
+            }
+
+            span {
+
+                color: var(--text-secondary);
+
+                font-size: var(--font-small);
+
+            }
+
+        }
+
+    }
+
+    /* ========================== */
+
+    .footer {
+
+        display: flex;
+
+        justify-content: flex-end;
+
+        gap: 14px;
+
+        padding: 22px 28px;
+
+        background: var(--surface-soft);
+
+        border-top: 1px solid var(--border);
+
+        button {
+
+            min-width: 120px;
+
+            height: 48px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            gap: 8px;
+
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius-md);
+
+            background: var(--surface);
+
+            color: var(--text-secondary);
+
+            font-size: var(--font-small);
+
+            font-weight: var(--weight-medium);
+
+            cursor: pointer;
+
+            transition: .2s;
+
+            &:hover {
+
+                border-color: var(--primary);
+
+                color: var(--primary);
+
+            }
+
+        }
+
+        .primary {
+
+            background: var(--gradient-primary);
+
+            border-color: var(--primary);
+
+            color: white;
+
+            box-shadow: var(--primary-shadow);
+
+            &:hover {
+
+                color: white;
+
+            }
+
+        }
+
+    }
+
+}
