@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, Navigate } from 'react'
 import { replace, useNavigate } from 'react-router'
 
 import authStore from '../store/authStore.js'
@@ -51,13 +51,15 @@ export default function ProtectRoute({ children }) {
 
         refresh();
 
-        if (status === "failed")
-            navigate("/", { replace: true });
 
-    }, [status])
+    }, [])
 
     if (loading) {
         return <WaitingScreen />
+
+        if (status === "failed") {
+        return <Navigate to="/auth/login" replace />;
+    }
     }
 
     if (status === "success")
