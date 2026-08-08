@@ -1,5 +1,5 @@
-import React, { useEffect, useState, Navigate } from 'react'
-import { replace, useNavigate } from 'react-router'
+import React, { useEffect, useState } from 'react'
+import { Navigate, replace, useNavigate } from 'react-router'
 
 import authStore from '../store/authStore.js'
 import useLoading from '../shared/hooks/useLoading.jsx'
@@ -39,10 +39,9 @@ export default function ProtectRoute({ children }) {
                 setStatus('success');
             }
         }
+
         else {
-
             setStatus('success');
-
         }
 
     }
