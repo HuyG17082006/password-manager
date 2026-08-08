@@ -51,15 +51,14 @@ export default function ProtectRoute({ children }) {
 
         refresh();
 
-
     }, [])
 
     if (loading) {
         return <WaitingScreen />
-
-        if (status === "failed") {
-        return <Navigate to="/auth/login" replace />;
     }
+
+    if (status === "failed") {
+        return <Navigate to="/auth/login" replace />;
     }
 
     if (status === "success")
