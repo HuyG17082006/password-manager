@@ -59,7 +59,7 @@ export default function FolderBar({
 
                             setData={setData}
 
-                            totalAccounts={overview[folder.id]}
+                            totalAccounts={overview[folder.id] || 0}
 
                             isSystem={true}
 
